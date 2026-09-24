@@ -1,10 +1,163 @@
-<<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
-<head>
-    <title>My IT Portfolio</title>
-</head>
-<body>
-    <h1>Welcome to my IT Portfolio! Under Contruction</h1>
-</body>
-<body style="background-color: hotpink;"></body>
+    <head>
+        <title>My IT Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            html {
+                scroll-behavior: smooth;
+            }
+           body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+                background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2000&auto=format&fit=crop');
+                background-color: #0a0a1a;
+                background-size: cover;
+                background-position: center;
+                color: white;
+            }
+            h1, h2 {
+                color: white;
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+           #about, #contact {
+                background-color: rgba(0, 0, 0, 0.6);
+                padding: 20px;
+                border-radius: 8px;
+            }
+            
+            .project-cards {
+                display: flex;
+                gap: 20px; 
+            }
+
+            article {
+                background-color: #f4f4f4;
+                padding: 15px;
+                border-radius: 8px;
+                transition: 0.5s
+            }
+            article:hover {
+                background-color: #e0e0e0;
+            }
+
+            input, textarea {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 15px;
+                box-sizing: border-box; 
+                background-color: rgba(255, 255, 255, 0.1); 
+                color: white;
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                border-radius: 4px;
+            }
+
+            input::placeholder, textarea::placeholder {
+                color: #ddd;
+            }
+
+            button {
+                background-color: #007bff; 
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+
+            button:hover {
+                background-color: #0056b3;
+            }
+
+            nav {
+                background-color: rgba(0, 0, 0, 0.8);
+                padding: 15px;
+                display: flex;
+                justify-content: center;
+                gap: 30px;
+                position: sticky;
+                top: 0;
+                z-index: 1000; 
+                border-radius: 0 0 8px 8px; 
+                margin-top: -20px; 
+            }
+
+            nav a {
+                color: white;
+                text-decoration: none; 
+                font-weight: bold;
+                transition: 0.3s;
+            }
+
+            nav a:hover {
+                color: #007bff; 
+            }
+
+            @media (max-width: 768px) {
+                .project-cards {
+                    flex-direction: column;
+                }
+                
+                nav {
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 15px;
+                    padding: 10px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#projects">My Projects</a>
+            <a href="#contact">Connect with Me</a>
+        </nav>
+        <h1>Systems & Sec</h1>
+        <p>Welcome to my IT Portfolio! Here you will find everything to know about my skills, certifications, and projects.</p>
+        
+        <section id="about">
+            <h2>About Me</h2>
+            <p>My goal is to master IT to its fullest potential and contribute to the field through innovative solutions and continuous learning.</p>
+            <ul> 
+                <li>Skills: Work in progress...</li>
+                <li>Certifications: Work in progress...</li>
+                <li>Projects: Coming Soon!</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            
+            <div class="project-cards">
+                <article>
+                    <h3>Developed a secure web application</h3>
+                    <p>This website is a live laboratory, where I built the code from scratch and created what you are seeing!</p>
+                    <a href="https://github.com/dalmasiissaiah-cmyk/Portfolio" target="_blank">View Project</a>
+                </article>
+            
+                <article>
+                    <h3>Cloud Project</h3>
+                    <p>Coming Soon!</p>
+                    <a href="#">View Project</a>
+                </article>
+            </div>
+            
+        </section>
+        <section id="contact">
+            <h2>Connect with Me</h2>
+            <p>Feel free to reach out to me through my social media profiles or email. I am always open to networking and collaboration opportunities.</p>
+            <form>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="tel" name="phone" placeholder="Your Phone Number">
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </body>
 </html>
