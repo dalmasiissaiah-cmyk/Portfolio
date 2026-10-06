@@ -155,6 +155,29 @@
                 box-shadow: 0 0 10px rgba(40, 167, 69, 0.5); /* Slight glow effect */
             }
 
+            .skills-grid {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                margin-top: 15px;
+                margin-bottom: 20px;
+            }
+
+            .skill-tag {
+                background-color: rgba(255, 255, 255, 0.1);
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                padding: 8px 16px;
+                border-radius: 20px; /* Creates the rounded pill shape */
+                font-size: 0.9em;
+                font-weight: bold;
+                transition: 0.3s;
+            }
+
+            .skill-tag:hover {
+                background-color: #007bff;
+                border-color: #007bff;
+                box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Adds a subtle glow */
+            }
         </style>
     </head>
     <body>
@@ -171,12 +194,16 @@
             <p>My goal is to master IT to its fullest potential and contribute to the field through innovative solutions and continuous learning.</p>
             
             <a href="https://docs.google.com/document/d/1EpKIcPxSFB3sSWk-487e05XLxtu7e5vo0epML7w2VAE/edit?usp=sharing" target="_blank" class="resume-btn">View My Resume</a>
-            
-            <ul> 
-                <li>Skills: Work in progress...</li>
-                <li>Certifications: Work in progress...</li>
-                <li>Projects: Coming Soon!</li>
-            </ul>
+            <h3>Technical Skills</h3>
+            <div class="skills-grid">
+                <span class="skill-tag">HTML & CSS</span>
+                <span class="skill-tag">Git & GitHub</span>
+                <span class="skill-tag">Linux</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">Machine Learning</span>
+                <span class="skill-tag">Cybersecurity Basics</span>
+            </div>
         </section>
             <ul> 
                 <li>Skills: Work in progress...</li>
