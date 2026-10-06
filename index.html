@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <title>My IT Portfolio</title>
@@ -7,7 +7,7 @@
             html {
                 scroll-behavior: smooth;
             }
-           body {
+            body {
                 font-family: Arial, sans-serif;
                 margin: 20px;
                 background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2000&auto=format&fit=crop');
@@ -23,7 +23,7 @@
                 max-width: 100%;
                 height: auto;
             }
-           #about, #contact {
+            #about, #contact {
                 background-color: rgba(0, 0, 0, 0.6);
                 padding: 20px;
                 border-radius: 8px;
@@ -138,7 +138,7 @@
 
             .resume-btn {
                 display: inline-block;
-                background-color: #28a745; /* A distinct green to make it stand out */
+                background-color: #28a745; 
                 color: white;
                 padding: 12px 24px;
                 margin-top: 10px;
@@ -151,8 +151,8 @@
             }
 
             .resume-btn:hover {
-                background-color: #218838; /* Darker green on hover */
-                box-shadow: 0 0 10px rgba(40, 167, 69, 0.5); /* Slight glow effect */
+                background-color: #218838; 
+                box-shadow: 0 0 10px rgba(40, 167, 69, 0.5); 
             }
 
             .skills-grid {
@@ -167,7 +167,7 @@
                 background-color: rgba(255, 255, 255, 0.1);
                 border: 1px solid rgba(255, 255, 255, 0.3);
                 padding: 8px 16px;
-                border-radius: 20px; /* Creates the rounded pill shape */
+                border-radius: 20px; 
                 font-size: 0.9em;
                 font-weight: bold;
                 transition: 0.3s;
@@ -176,7 +176,7 @@
             .skill-tag:hover {
                 background-color: #007bff;
                 border-color: #007bff;
-                box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Adds a subtle glow */
+                box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); 
             }
             
             footer {
@@ -230,12 +230,6 @@
                 <span class="skill-tag">Cybersecurity Basics</span>
             </div>
         </section>
-            <ul> 
-                <li>Skills: Work in progress...</li>
-                <li>Certifications: Work in progress...</li>
-                <li>Projects: Coming Soon!</li>
-            </ul>
-        </section>
 
         <section id="projects">
             <h2>My Projects</h2>
@@ -262,7 +256,8 @@
                 <a href="https://github.com/dalmasiissaiah-cmyk" target="_blank">GitHub</a>
                 <a href="https://www.linkedin.com/in/issaiah-dalmas" target="_blank">LinkedIn</a>
             </div>
-            <form id="contact-form" action="https://formspree.io/forms/xppqqdaj" method="POST">
+            <!-- FIXED: The action URL is now /f/ instead of /forms/ -->
+            <form id="contact-form" action="https://formspree.io/f/xppqqdaj" method="POST">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
                 <input type="tel" name="phone" placeholder="Your Phone Number">
