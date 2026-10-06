@@ -35,13 +35,16 @@
             }
 
             article {
-                background-color: #f4f4f4;
-                padding: 15px;
+                background-color: rgba(0, 0, 0, 0.6);
+                padding: 20px;
                 border-radius: 8px;
-                transition: 0.5s
+                color: white;
+                transition: 0.5s;
+                border: 1px solid rgba(255, 255, 255, 0.1);
             }
+
             article:hover {
-                background-color: #e0e0e0;
+                background-color: rgba(0, 0, 0, 0.9);
             }
 
             input, textarea {
@@ -108,7 +111,32 @@
                     gap: 15px;
                     padding: 10px;
                 }
+
             }
+            .social-links {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .social-links a {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 4px;
+            transition: 0.3s;
+            font-weight: bold;
+        }
+
+        .social-links a:hover {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+
         </style>
     </head>
     <body>
@@ -151,6 +179,11 @@
         <section id="contact">
             <h2>Connect with Me</h2>
             <p>Feel free to reach out to me through my social media profiles or email. I am always open to networking and collaboration opportunities.</p>
+            <div class="social-links">
+                <a href="https://github.com/dalmasiissaiah-cmyk" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/issaiah-dalmas" target="_blank">LinkedIn</a>
+                <a href="https://twitter.com/issaiah_dalmas" target="_blank">Twitter</a>
+            </div>
             <form>
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
