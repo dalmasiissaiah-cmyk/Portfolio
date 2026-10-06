@@ -1,0 +1,16 @@
+# Block AI Data Scrapers
+User-agent: GPTBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Omgili
+Disallow: /
+
+# Allow normal search engines (Google, Bing) so recruiters can find you
+User-agent: *
+Allow: /
